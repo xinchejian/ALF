@@ -1,0 +1,158 @@
+# EESchema Netlist Version 1.1 created  Sat 10 Nov 2012 03:03:40 PM CST
+(
+ ( /509CBC7D $noname  Q2 2N3904 {Lib=NPN}
+  (    1 N-000012 )
+  (    2 N-000008 )
+  (    3 N-000011 )
+ )
+ ( /509CBC8C $noname  Q1 2N3904 {Lib=NPN}
+  (    1 N-000008 )
+  (    2 N-000002 )
+  (    3 N-000011 )
+ )
+ ( /509CBC9B $noname  Q4 2N3906 {Lib=PNP}
+  (    1 N-000007 )
+  (    2 N-000010 )
+  (    3 N-000009 )
+ )
+ ( /509CBCAA $noname  Q3 2N3906 {Lib=PNP}
+  (    1 N-000006 )
+  (    2 N-000007 )
+  (    3 N-000009 )
+ )
+ ( /509CBD8F $noname  M2 CONN_2 {Lib=CONN_2}
+  (    1 N-000009 )
+  (    2 N-000012 )
+ )
+ ( /509DAA26 $noname  M1 CONN_2 {Lib=CONN_2}
+  (    1 N-000011 )
+  (    2 N-000006 )
+ )
+ ( /509DAA89 $noname  R4 51k {Lib=R}
+  (    1 N-000001 )
+  (    2 N-000010 )
+ )
+ ( /509DAAA9 $noname  R3 51k {Lib=R}
+  (    1 N-000002 )
+  (    2 N-000001 )
+ )
+ ( /509DAAB8 $noname  BT1 BATTERY {Lib=BATTERY}
+  (    1 N-000003 )
+  (    2 N-000012 )
+ )
+ ( /509DABA7 $noname  R1 LDR_1M {Lib=R}
+  (    1 N-000006 )
+  (    2 N-000001 )
+ )
+ ( /509DABB6 $noname  R2 LDR_1M {Lib=R}
+  (    1 N-000001 )
+  (    2 N-000012 )
+ )
+ ( /509DAC7C $noname  R5 220 {Lib=R}
+  (    1 N-000006 )
+  (    2 N-000005 )
+ )
+ ( /509DACBB $noname  D1 LED {Lib=LED}
+  (    1 N-000005 )
+  (    2 N-000012 )
+ )
+ ( /509DFAFD $noname  SW1 SWITCH_INV {Lib=SWITCH_INV}
+  (    1 ? )
+  (    2 N-000003 )
+  (    3 N-000006 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ R3 2
+ R4 1
+ R2 1
+ R1 2
+Net 2 "" ""
+ R3 1
+ Q1 2
+Net 3 "" ""
+ SW1 2
+ BT1 1
+Net 5 "" ""
+ R5 2
+ D1 1
+Net 6 "" ""
+ R5 1
+ Q3 1
+ SW1 3
+ M1 2
+ R1 1
+Net 7 "" ""
+ Q3 2
+ Q4 1
+Net 8 "" ""
+ Q2 2
+ Q1 1
+Net 9 "" ""
+ M2 1
+ Q4 3
+ Q3 3
+Net 10 "" ""
+ R4 2
+ Q4 2
+Net 11 "" ""
+ Q2 3
+ M1 1
+ Q1 3
+Net 12 "" ""
+ R2 2
+ M2 2
+ Q2 1
+ BT1 2
+ D1 2
+}
+#End

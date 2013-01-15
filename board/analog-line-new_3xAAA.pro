@@ -1,5 +1,5 @@
-update=23/09/2012 16:48:29
-last_client=pcbnew
+update=Sat 10 Nov 2012 03:13:16 PM CST
+last_client=cvpcb
 [pcbnew]
 version=1
 PadDrlX=320
@@ -18,7 +18,6 @@ TxtLar=120
 MSegLar=150
 LastNetListRead=
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -26,7 +25,14 @@ LibName4=pin_array
 LibName5=divers
 LibName6=libcms
 LibName7=display
-LibName8=valves
-LibName9=led
-LibName10=dip_sockets
-LibName11=Switch6pin
+LibName8=led
+LibName9=dip_sockets
+LibName10=pga_sockets
+LibName11=valves
+LibName12=/home/edwardrf/git/SwarmRobots/kicad/lib/Switch6pin
+LibDir=
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms

@@ -1,0 +1,122 @@
+Cmp-Mod V01 Created by CvPcb (2012-oct-18)-testing date = Wed 12 Dec 2012 01:29:58 AM CST
+
+BeginCmp
+TimeStamp = /509DAAB8;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /509DACBB;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /50C76B3F;
+Reference = D2;
+ValeurCmp = DIODE;
+IdModule  = D3;
+EndCmp
+
+BeginCmp
+TimeStamp = /509DAA26;
+Reference = M1;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /509CBD8F;
+Reference = M2;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /509CBC8C;
+Reference = Q1;
+ValeurCmp = 2N3904;
+IdModule  = TO92-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /509CBC7D;
+Reference = Q2;
+ValeurCmp = 2N3904;
+IdModule  = TO92-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /509CBCAA;
+Reference = Q3;
+ValeurCmp = 2N3906;
+IdModule  = TO92-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /509CBC9B;
+Reference = Q4;
+ValeurCmp = 2N3906;
+IdModule  = TO92-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /509DABA7;
+Reference = R1;
+ValeurCmp = LDR_1M;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /509DABB6;
+Reference = R2;
+ValeurCmp = LDR_1M;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /509DAAA9;
+Reference = R3;
+ValeurCmp = 51k;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /509DAA89;
+Reference = R4;
+ValeurCmp = 51k;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /509DAC7C;
+Reference = R5;
+ValeurCmp = 220;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /50C76D26;
+Reference = R6;
+ValeurCmp = R;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /50C76D35;
+Reference = R7;
+ValeurCmp = R;
+IdModule  = R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /509DFAFD;
+Reference = SW1;
+ValeurCmp = SWITCH_INV;
+IdModule  = Switch6pin;
+EndCmp
+
+EndListe
