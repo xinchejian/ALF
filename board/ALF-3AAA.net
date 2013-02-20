@@ -1,191 +1,235 @@
-# EESchema Netlist Version 1.1 created  Wed 12 Dec 2012 01:29:22 AM CST
-(
- ( /509CBC7D $noname  Q2 2N3904 {Lib=NPN}
-  (    1 N-000016 )
-  (    2 N-000012 )
-  (    3 N-000011 )
- )
- ( /509CBC8C $noname  Q1 2N3904 {Lib=NPN}
-  (    1 N-000012 )
-  (    2 N-000015 )
-  (    3 N-000011 )
- )
- ( /509CBC9B $noname  Q4 2N3906 {Lib=PNP}
-  (    1 N-000010 )
-  (    2 N-000014 )
-  (    3 N-000017 )
- )
- ( /509CBCAA $noname  Q3 2N3906 {Lib=PNP}
-  (    1 N-000013 )
-  (    2 N-000010 )
-  (    3 N-000017 )
- )
- ( /509CBD8F $noname  M2 CONN_2 {Lib=CONN_2}
-  (    1 N-000017 )
-  (    2 N-000016 )
- )
- ( /509DAA26 $noname  M1 CONN_2 {Lib=CONN_2}
-  (    1 N-000011 )
-  (    2 N-000013 )
- )
- ( /509DAA89 $noname  R4 51k {Lib=R}
-  (    1 N-000002 )
-  (    2 N-000014 )
- )
- ( /509DAAA9 $noname  R3 51k {Lib=R}
-  (    1 N-000015 )
-  (    2 N-000002 )
- )
- ( /509DAAB8 $noname  BT1 BATTERY {Lib=BATTERY}
-  (    1 N-000008 )
-  (    2 N-000016 )
- )
- ( /509DABA7 $noname  R1 LDR_1M {Lib=R}
-  (    1 N-000013 )
-  (    2 N-000002 )
- )
- ( /509DABB6 $noname  R2 LDR_1M {Lib=R}
-  (    1 N-000002 )
-  (    2 N-000016 )
- )
- ( /509DAC7C $noname  R5 220 {Lib=R}
-  (    1 N-000013 )
-  (    2 N-000001 )
- )
- ( /509DACBB $noname  D1 LED {Lib=LED}
-  (    1 N-000001 )
-  (    2 N-000016 )
- )
- ( /509DFAFD $noname  SW1 SWITCH_INV {Lib=SWITCH_INV}
-  (    1 ? )
-  (    2 N-000003 )
-  (    3 N-000013 )
- )
- ( /50C76B3F $noname  D2 DIODE {Lib=DIODE}
-  (    1 N-000008 )
-  (    2 N-000003 )
- )
- ( /50C76D26 $noname  R6 R {Lib=R}
-  (    1 ? )
-  (    2 ? )
- )
- ( /50C76D35 $noname  R7 R {Lib=R}
-  (    1 ? )
-  (    2 ? )
- )
-)
-*
-{ Allowed footprints by component:
-$component R4
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R5
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component D1
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D2
- D?
- S*
-$endlist
-$component R6
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R7
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$endfootprintlist
-}
-{ Pin List by Nets
-Net 1 "" ""
- D1 1
- R5 2
-Net 2 "" ""
- R1 2
- R2 1
- R3 2
- R4 1
-Net 3 "" ""
- D2 2
- SW1 2
-Net 8 "" ""
- D2 1
- BT1 1
-Net 10 "" ""
- Q3 2
- Q4 1
-Net 11 "" ""
- M1 1
- Q2 3
- Q1 3
-Net 12 "" ""
- Q1 1
- Q2 2
-Net 13 "" ""
- R5 1
- Q3 1
- R1 1
- M1 2
- SW1 3
-Net 14 "" ""
- Q4 2
- R4 2
-Net 15 "" ""
- Q1 2
- R3 1
-Net 16 "" ""
- BT1 2
- Q2 1
- M2 2
- D1 2
- R2 2
-Net 17 "" ""
- Q3 3
- Q4 3
- M2 1
-}
-#End
+(export (version D)
+  (design
+    (source /home/edwardrf/git/ALF/board/ALF-3AAA.sch)
+    (date "Wed 20 Feb 2013 07:53:23 PM CST")
+    (tool "eeschema (2012-nov-02)-testing"))
+  (components
+    (comp (ref Q2)
+      (value 2N3904)
+      (libsource (lib device) (part NPN))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509CBC7D))
+    (comp (ref Q1)
+      (value 2N3904)
+      (libsource (lib device) (part NPN))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509CBC8C))
+    (comp (ref Q4)
+      (value 2N3906)
+      (libsource (lib device) (part PNP))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509CBC9B))
+    (comp (ref Q3)
+      (value 2N3906)
+      (libsource (lib device) (part PNP))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509CBCAA))
+    (comp (ref M2)
+      (value CONN_2)
+      (libsource (lib conn) (part CONN_2))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509CBD8F))
+    (comp (ref M1)
+      (value CONN_2)
+      (libsource (lib conn) (part CONN_2))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509DAA26))
+    (comp (ref R4)
+      (value 100k)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509DAA89))
+    (comp (ref R3)
+      (value 100k)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509DAAA9))
+    (comp (ref BT1)
+      (value BATTERY)
+      (libsource (lib device) (part BATTERY))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509DAAB8))
+    (comp (ref R1)
+      (value "LDR 1M")
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509DABA7))
+    (comp (ref R2)
+      (value "LDR 1M")
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509DABB6))
+    (comp (ref R5)
+      (value 220)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509DAC7C))
+    (comp (ref D1)
+      (value LED)
+      (libsource (lib device) (part LED))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509DACBB))
+    (comp (ref SW1)
+      (value SWITCH_INV)
+      (libsource (lib device) (part SWITCH_INV))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 509DFAFD))
+    (comp (ref R6)
+      (value R)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 50C76D26))
+    (comp (ref R7)
+      (value R)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 50C76D35))
+    (comp (ref Q5)
+      (value 2N3904)
+      (libsource (lib device) (part NPN))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5124B1F4))
+    (comp (ref Q6)
+      (value 2N3906)
+      (libsource (lib device) (part PNP))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5124B1FA)))
+  (libparts
+    (libpart (lib device) (part BATTERY)
+      (fields
+        (field (name Reference) BT)
+        (field (name Value) BATTERY))
+      (pins
+        (pin (num 1) (name +) (type passive))
+        (pin (num 2) (name -) (type passive))))
+    (libpart (lib device) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib device) (part NPN)
+      (docs transistors/bipolar/*.*)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) NPN))
+      (pins
+        (pin (num 1) (name E) (type passive))
+        (pin (num 2) (name B) (type input))
+        (pin (num 3) (name C) (type passive))))
+    (libpart (lib device) (part PNP)
+      (docs transistors/bipolar/*.*)
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) PNP))
+      (pins
+        (pin (num 1) (name E) (type passive))
+        (pin (num 2) (name B) (type input))
+        (pin (num 3) (name C) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistance)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part SWITCH_INV)
+      (description "Switch inverseur")
+      (fields
+        (field (name Reference) SW)
+        (field (name Value) SWITCH_INV))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))))
+    (libpart (lib conn) (part CONN_2)
+      (description "Symbole general de connecteur")
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_2))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name PM) (type passive)))))
+  (libraries
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib)))
+  (nets
+    (net (code 1) (name "")
+      (node (ref Q5) (pin 2))
+      (node (ref Q2) (pin 1)))
+    (net (code 2) (name "")
+      (node (ref R7) (pin 2)))
+    (net (code 3) (name "")
+      (node (ref R7) (pin 1)))
+    (net (code 4) (name "")
+      (node (ref R6) (pin 2)))
+    (net (code 5) (name "")
+      (node (ref R6) (pin 1)))
+    (net (code 6) (name "")
+      (node (ref SW1) (pin 2))
+      (node (ref BT1) (pin 1)))
+    (net (code 7) (name "")
+      (node (ref SW1) (pin 1)))
+    (net (code 8) (name "")
+      (node (ref R5) (pin 2))
+      (node (ref D1) (pin 1)))
+    (net (code 9) (name "")
+      (node (ref Q5) (pin 3))
+      (node (ref Q2) (pin 3))
+      (node (ref M1) (pin 1))
+      (node (ref Q1) (pin 3)))
+    (net (code 10) (name "")
+      (node (ref R3) (pin 1))
+      (node (ref Q1) (pin 2)))
+    (net (code 11) (name "")
+      (node (ref Q3) (pin 1))
+      (node (ref Q6) (pin 2)))
+    (net (code 12) (name "")
+      (node (ref Q4) (pin 2))
+      (node (ref R4) (pin 2)))
+    (net (code 13) (name "")
+      (node (ref R3) (pin 2))
+      (node (ref R2) (pin 1))
+      (node (ref R4) (pin 1))
+      (node (ref R1) (pin 2)))
+    (net (code 14) (name "")
+      (node (ref M1) (pin 2))
+      (node (ref R5) (pin 1))
+      (node (ref SW1) (pin 3))
+      (node (ref R1) (pin 1))
+      (node (ref Q6) (pin 1)))
+    (net (code 15) (name GND)
+      (node (ref R2) (pin 2))
+      (node (ref BT1) (pin 2))
+      (node (ref Q5) (pin 1))
+      (node (ref D1) (pin 2))
+      (node (ref M2) (pin 2)))
+    (net (code 16) (name "")
+      (node (ref Q3) (pin 3))
+      (node (ref Q6) (pin 3))
+      (node (ref M2) (pin 1))
+      (node (ref Q4) (pin 3)))
+    (net (code 17) (name "")
+      (node (ref Q3) (pin 2))
+      (node (ref Q4) (pin 1)))
+    (net (code 18) (name "")
+      (node (ref Q1) (pin 1))
+      (node (ref Q2) (pin 2)))))
